@@ -48,6 +48,7 @@ new Vue({
         console.log('email: ', resp.data);
         //Col .response risalgo esattamente al valore dell'email interna all'object restituito
         self.emailRand = resp.data.response;
+        //Per ogni email generata, riempi l'array "emailList"
         self.emailList.push(self.emailRand);
         console.log('Ecco l\'array delle email: ' +  self.emailList);
       });
