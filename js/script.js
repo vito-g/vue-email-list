@@ -19,6 +19,7 @@ new Vue({
       .then(function(resp) {
         //Se la chiamata ha successo, in termini di risposta, allora evadi il risultato in console, ad ogni iterazione.
         console.log('email: ', resp.data);
+        //Col .response risalgo esattamente al valore dell'email interna all'object restituito
         self.emailRand = resp.data.response;
       });
     }
